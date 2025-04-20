@@ -1,0 +1,5 @@
+Problem Statement:
+
+The software development lifecycle is often hampered by repetitive, mundane tasks such as writing boilerplate code, generating test cases, creating documentation, and summarizing pull requests. These tasks consume significant time and effort, slowing down project delivery and reducing productivity. Developers often struggle to maintain code quality, implement best practices, and adhere to coding standards due to the time constraints of manual work.
+
+NerdAI addresses this problem by automating key parts of the development process with AI. The tool enhances productivity by generating boilerplate code, creating tests, providing documentation, reviewing code, and suggesting refactors, all using advanced AI algorithms. It reduces the burden of routine tasks, allowing developers to focus on more complex problem-solving and improving overall code quality.
