@@ -19,7 +19,7 @@ class RefactorAdviceRequest(BaseModel):
     code_quality_issues: str = ""  # Optional: Known code quality issues (e.g., readability, maintainability)
 
 # Refactor Advice Endpoint
-@router.post("/generate-refactor-advice/")
+@router.post("/")
 async def generate_refactor_advice(data: RefactorAdviceRequest):
     try:
         if not data.code_snippet.strip() or not data.language.strip():
