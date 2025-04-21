@@ -12,7 +12,7 @@ class ReviewRequest(BaseModel):
     language: str = "Python"  # Optional field for the programming language (default is Python)
 
 # Code Review Endpoint
-@router.post("/code-review/")
+@router.post("/")
 async def review_code(data: ReviewRequest):
     if not data.code.strip():
         raise HTTPException(status_code=400, detail="Code snippet is required.")
