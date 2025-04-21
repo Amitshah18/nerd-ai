@@ -14,7 +14,7 @@ class DocsRequest(BaseModel):
     project_name: str = "Unnamed Project"  # Optional: Default name
 
 # API Documentation Endpoint
-@router.post("/generate-docs/")
+@router.post("/")
 async def generate_docs(data: DocsRequest):
     try:
         if not data.project_description.strip() or not data.api_endpoints:
