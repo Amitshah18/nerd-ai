@@ -10,7 +10,7 @@ def call_openai(prompt: str) -> str:
     try:
         # Make the API call to OpenAI
         response = openai.Completion.create(
-            model="gpt-3.5-turbo",  # Ensure you're using a valid model
+            model="gpt-4",  # Ensure you're using a valid model
             prompt=prompt,
             max_tokens=1000,
             temperature=0.7,
