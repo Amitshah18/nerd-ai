@@ -14,7 +14,7 @@ class PRSummaryRequest(BaseModel):
 async def generate_pr_summary(data: PRSummaryRequest):
     try:
         if not data.prompt.strip():
-            raise HTTPException(status_code=400, detail="Prompt cannot be empty.")
+            raise HTTPException(status_code=400, detail="Prompt cannot be empty, give some prompt.")
 
         # Generate PR summary using Groq API
         result = get_groq_response(data.prompt)
