@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from app.routes import signup
 # Import the routes
 from app.routes import auto_jira, boilerplate, code_review, docs, pr_summary, refactor_advice, testcases
 
@@ -25,7 +25,7 @@ app.include_router(pr_summary.router, prefix="/api/pr_summary", tags=["PR Summar
 app.include_router(refactor_advice.router, prefix="/api/refactor_advice", tags=["Refactor Advice"])
 app.include_router(testcases.router, prefix="/api/testcases", tags=["Testcases"])
 app.include_router(testcases.router, prefix="/api/test_case_generator", tags=["Test Case Generator"])
-
+app.include_router(signup.router, prefix="/api")
 # Example health check route
 @app.get("/")
 async def read_root():
